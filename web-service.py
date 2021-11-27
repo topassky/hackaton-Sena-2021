@@ -9,6 +9,9 @@ def server_info():
     good_intentions, bad_intentions = data_pandas.analyze_data()
     intesiones = {"buenas_intesiones":good_intentions, 
                     "malas_intesiones":bad_intentions}
+    
+    data_pandas.dataFrame_grafica()
+
     return jsonify(intesiones)
 
   
